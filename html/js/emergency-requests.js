@@ -58,6 +58,6 @@ function showEmergencyNotification(request) {
 }
 function closeNotification() {
     notificationBox.innerHTML = "";
-
+    
 }
 displayEmergencyRequests();
