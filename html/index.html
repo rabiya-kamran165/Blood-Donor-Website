@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donor Finder</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+        <div class="logo">
+        <h1 class="logo-text">BL<img src="../assets/logo.png" alt="O">OD</h1>
+        <h5>Donor's Across Pakistan</h5>
+        </div>
+        <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="donors.html">Donors</a></li>
+        <li><a href="blood-requests.html">Blood Requests</a></li>
+        <li><a href="emergency-requests.html">Emergency Requests</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="request-for-blood.html" class="request-btn">Request for Blood</a></li>
+        <li><a href="donate.html" class="donate-btn">DONATE</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+        <h1>A DROP OF BLOOD CAN SAVE A LIFE</h1>
+        <p>Someone, somewhere, is waiting for the blood that could save their life. Your small act of kindness can make a life-changing difference.</p>
+        <a href="donate.html" class="btn">Donate Today</a>
+        </div>
+    </section>
+
+    <!-- Website Guide Section -->
+    <section class="website-guide">
+    <div class="guide-heading">
+        <h2>Explore Our Website</h2>
+        <p>Find the right page for blood donation, blood requests,and helpful information.</p>
+    </div>
+    <div class="guide-grid">
+        <!-- Home -->
+        <div class="guide-card">
+            <div class="guide-icon">🏠</div>
+            <h3>Home</h3>
+            <p>Learn about blood groups compatibility guide, who can or cannot donate blood.</p>
+        </div>
+        <!-- Donors -->
+        <div class="guide-card">
+            <div class="guide-icon">🩸</div>
+            <h3>Donors</h3>
+            <p>Find active blood donors and search by blood group, city, or area.</p>
+        </div>
+        <!-- Blood Requests -->
+        <div class="guide-card">
+            <div class="guide-icon">📋</div>
+            <h3>Blood Requests</h3>
+            <p> View active blood requests from people who currently need blood.</p>
+        </div>
+        <!-- Emergency Requests -->
+        <div class="guide-card emergency-guide-card">
+            <div class="guide-icon">🚨</div>
+            <h3>Emergency Requests</h3>
+            <p>View urgent blood requests that require immediate attention within a few hours.</p>
+        </div>
+        <!-- FAQs -->
+        <div class="guide-card">
+            <div class="guide-icon">❓</div>
+            <h3>FAQs</h3>
+            <p>Find answers to common questions about blood donation.</p>
+        </div>
+        <!-- Request Blood -->
+        <div class="guide-card">
+            <div class="guide-icon">🩸</div>
+            <h3>Request for Blood</h3>
+            <p> Submit a registration form to request blood for a patient in need.</p>
+        </div>
+        <!-- Donate -->
+        <div class="guide-card">
+            <div class="guide-icon">❤️</div>
+            <h3>Donate Now</h3>
+            <p>Register as a blood donor and become part of our life-saving donor community.
+            </p>
+        </div>
+    </div>
+    </section>
+
+    <!-- Blood Group Guide Section -->
+    <section class="blood-guide-section">
+        <div class="section-container">
+        <h2 class="section-title">Blood Group Compatibility Guide</h2>
+        <p class="section-subtitle">Understanding who you can save. Your blood type determines who can safely receive your donation.</p>
+
+        <div class="guide-grid">
+        <!-- Card 1: Universal Donors -->
+        <div class="guide-card universal-donor">
+        <div class="badge">O- Negative</div>
+            <h3>Universal Donor</h3>
+            <p><strong>O- blood</strong> can be given to patients of <strong>any blood type</strong>. It is crucially used in emergency rooms when a patient's blood type is unknown.</p>
+            <div class="compatibility-tags">
+            <span>Can Give To: All Blood Types</span>
+        </div>
+        </div>
+
+        <!-- Card 2: Universal Receivers -->
+        <div class="guide-card universal-receiver">
+        <div class="badge">AB+ Positive</div>
+            <h3>Universal Receiver</h3>
+            <p>Patients with <strong>AB+ blood</strong> can safely receive red blood cells from <strong>any blood type</strong> during a medical emergency or transfusion.</p>
+            <div class="compatibility-tags">
+            <span>Can Receive From: All Blood Types</span>
+            </div>
+        </div>
+        </div>
+
+        <!-- Comprehensive Quick Compatibility Table -->
+        <div class="table-wrapper">
+            <h3>Quick Compatibility Matrix</h3>
+            <table class="compatibility-table">
+            <thead>
+            <tr>
+            <th>Blood Type</th>
+            <th>Can Donate To (Give)</th>
+            <th>Can Receive From (Get)</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td><strong>A+</strong></td>
+            <td>A+, AB+</td>
+            <td>A+, A-, O+, O-</td>
+            </tr>
+            <tr>
+            <td><strong>A-</strong></td>
+            <td>A+, A-, AB+, AB-</td>
+            <td>A-, O-</td>
+            </tr>
+            <tr>
+            <td><strong>B+</strong></td>
+            <td>B+, AB+</td>
+            <td>B+, B-, O+, O-</td>
+            </tr>
+            <tr>
+            <td><strong>B-</strong></td>
+            <td>B+, B-, AB+, AB-</td>
+            <td>B-, O-</td>
+            </tr>
+            <tr>
+            <td><strong>AB+</strong></td>
+            <td>AB+ Only</td>
+            <td>All Blood Types</td>
+            </tr>
+            <tr>
+            <td><strong>AB-</strong></td>
+            <td>AB+, AB-</td>
+            <td>AB-, A-, B-, O-</td>
+            </tr>
+            <tr>
+                        <td><strong>O+</strong></td>
+                        <td>O+, A+, B+, AB+</td>
+                        <td>O+, O-</td>
+                    </tr>
+                    <tr>
+                        <td><strong>O-</strong></td>
+                        <td>All Blood Types</td>
+                        <td>O- Only</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Eligibility Criteria Section -->
+<section class="eligibility-section">
+    <div class="section-container">
+        <h2 class="section-title">Can You Donate Blood?</h2>
+        <p class="section-subtitle">Check out the basic eligibility criteria before you register or request for blood.</p>
+
+        <div class="criteria-grid">
+        <div class="criteria-card pass">
+            <h3>✔ General Requirements</h3>
+            <ul>
+                <li><strong>Age:</strong> Must be above than 18 years old.</li>
+                <li><strong>Weight:</strong> Must weigh at least 50 kg (110 lbs).</li>
+                <li><strong>Health:</strong> Must be in good general health at the time of donation and don't have any chronic disease like hepatitis, heart disease, diabetes and any kind of disease that is transmissible.</li>
+                <li><strong>Hemoglobin:</strong> Minimum level of 12.5 g/dl for women and 13.5 g/dl for men.</li>
+                <li><strong>Interval:</strong> At least 3 months (90 days) since your last donation.</li>
+            </ul>
+        </div>
+
+            <!-- Box 2: Temporary/Permanent Restrictions -->
+        <div class="criteria-card fail">
+            <h3>✖ Who Cannot Donate</h3>
+            <ul>
+                <li><strong>Illness:</strong> Active fever, flu, sore throat, or recent infections.</li>
+                <li><strong>Medication:</strong> Taking antibiotics or specific prescribed drugs.</li>
+                <li><strong>Travel:</strong> Recent travel to certain high-risk malaria areas.</li>
+                <li><strong>Tattoos/Piercings:</strong> Got a new tattoo or piercing within the last 6 months.</li>
+                <li><strong>Conditions:</strong> Chronic conditions like hepatitis, HIV, heart disease and any type of disease that is transmissible.</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="site-footer">
+    <div class="footer-container">
+
+        <!-- Column 2: Navigation Features List -->
+        <div class="footer-col links-list">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="donors.html">Donors</a></li>
+                <li><a href="blood-requests.html">Blood Requests</a></li>
+                <li><a href="emergency-request.html">Emergency Requests</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Bottom Copyright Bar -->
+    <div class="footer-bottom">
+        <p>&copy; 2026 BLOOD - Donor's Across Pakistan. All Rights Reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

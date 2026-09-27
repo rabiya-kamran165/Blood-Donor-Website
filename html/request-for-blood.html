@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request For Blood Registration Form | Blood Donor Finder</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <section class="form-section">
+  <div class="form-container">
+    <h2 class="form-title">Post a <span>Blood Request</span></h2>
+    <p class="form-subtitle">Fill out this form to connect with active blood donors in your area.</p>
+
+    <form id="blood-request-form" class="blood-form">
+      
+      <!-- Patient/Attendant Name -->
+      <div class="form-group">
+        <label for="patient-name">Patient / Contact Person Name</label>
+        <input type="text" id="patient-name" required placeholder="e.g., Muhammad Ali">
+      </div>
+
+      <!-- Blood Group Dropdown -->
+      <div class="form-group">
+        <label for="blood-group">Required Blood Group</label>
+        <select id="blood-group" required>
+          <option value="" disabled selected>Select Blood Group</option>
+          <option value="A+">A+</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+        </select>
+      </div>
+
+      <!-- Units Required -->
+      <div class="form-group">
+        <label for="blood-units">Blood Units Required (Bags)</label>
+        <input type="number" id="blood-units" min="1" max="10" required placeholder="e.g., 2">
+      </div>
+
+      <!-- City -->
+      <div class="form-group">
+        <label for="city">City</label>
+        <input type="text" id="city" required placeholder="e.g., Lahore">
+      </div>
+
+      <!-- Area -->
+      <div class="form-group">
+        <label for="area">Area / Locality</label>
+        <input type="text" id="area" required placeholder="e.g., Gulberg">
+      </div>
+
+      <!-- Hospital -->
+      <div class="form-group">
+        <label for="hospital">Hospital Name</label>
+        <input type="text" id="hospital" required placeholder="e.g., Jinnah Hospital">
+      </div>
+
+      <!-- Contact Number -->
+      <div class="form-group">
+        <label for="contact-number">Contact Number</label>
+        <input type="tel" id="contact" maxlength="11" required placeholder="e.g., 03XXXXXXXXX">
+      </div>
+
+      <div class="form-group">
+        <label for="date">Blood Required Date</label>
+        <input type="date" id="date" required>
+      </div>
+
+<!-- REPLACEMENT DROPDOWN (100% SHOW AUR OPERATIONAL HO GA) -->
+<div class="form-group">
+  <label for="request-type">Request Type / Urgency Status</label>
+  <select id="request-type" required>
+    <option value="normal" selected>Normal Blood Request (Standard Case)</option>
+    <option value="emergency">⚠️ Critical Emergency (Required within hours!)</option>
+  </select>
+</div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="submit-form-btn">Submit Blood Request</button>
+    </form>
+  </div>
+</section>
+<script src="../js/request-for-blood.js"></script>
+</body>
+</html>

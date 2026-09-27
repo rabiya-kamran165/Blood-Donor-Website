@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a Donor Form | Blood Donor Finder</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+   <section class="donor-reg-section">
+    <div class="reg-container">
+      <h2 class="reg-title">Become a <span>Blood Donor</span></h2>
+      <p class="reg-subtitle">Please fill out your personal information and answer the medical screening questions below.</p>
+
+      <!-- Main Form (Properly Open) -->
+      <form id="donor-registration-form" class="donor-form">
+        
+        <!-- Field 1 -->
+        <div class="form-group">
+          <label for="donor-name">Full Name</label>
+          <input type="text" id="donor-name" required placeholder="e.g., Sarah Khan">
+        </div>
+
+        <!-- Field 2 -->
+        <div class="form-group">
+          <label for="donor-blood">Blood Group</label>
+          <select id="donor-blood" required>
+            <option value="" disabled selected>Select Blood Group</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+          </select>
+        </div>
+
+        <!-- Field 3 -->
+        <div class="form-group">
+          <label for="donor-city">City</label>
+          <input type="text" id="donor-city" required placeholder="e.g., Lahore">
+        </div>
+
+        <!-- Field 4 -->
+        <div class="form-group">
+          <label for="donor-area">Area / Locality</label>
+          <input type="text" id="donor-area" required placeholder="e.g., Gulberg">
+        </div>
+
+        <!-- Field 5 -->
+        <div class="form-group">
+          <label for="donor-contact">Contact Number</label>
+          <input type="tel" id="donor-contact" maxlength="11" required placeholder="e.g., 03XXXXXXXXX">
+        </div>
+
+        <!-- Separator -->
+        <div class="form-divider"></div>
+
+        <!-- Eligibility Header Box -->
+        <div class="eligibility-alert-box">
+          <strong>Medical Screening Questionnaire</strong>
+          <p>Please answer these basic questions before submitting your profile.</p>
+        </div>
+
+        <!-- Medical Q1 -->
+        <div class="form-group quiz-group">
+          <label>1. Are you between 18 and 65 years of age?</label>
+          <div class="radio-options">
+            <label><input type="radio" name="q-age" value="yes" required> Yes</label>
+            <label><input type="radio" name="q-age" value="no"> No</label>
+          </div>
+        </div>
+
+        <!-- Medical Q2 -->
+        <div class="form-group quiz-group">
+          <label>2. Do you currently have Jaundice, Hepatitis B, or Hepatitis C?</label>
+          <div class="radio-options">
+            <label><input type="radio" name="q-hepatitis" value="yes" required> Yes</label>
+            <label><input type="radio" name="q-hepatitis" value="no"> No</label>
+          </div>
+        </div>
+
+        <!-- Medical Q3 -->
+        <div class="form-group quiz-group">
+          <label>3. Do you currently have any transmissible/blood-borne infectious disease (e.g., HIV/AIDS, Malaria)?</label>
+          <div class="radio-options">
+            <label><input type="radio" name="q-infectious" value="yes" required> Yes</label>
+            <label><input type="radio" name="q-infectious" value="no"> No</label>
+          </div>
+        </div>
+
+        <!-- Medical Q4 -->
+        <div class="form-group quiz-group">
+          <label>4. Are you currently taking any long-term regular medications or antibiotics?</label>
+          <div class="radio-options">
+            <label><input type="radio" name="q-medicine" value="yes" required> Yes</label>
+            <label><input type="radio" name="q-medicine" value="no"> No</label>
+          </div>
+        </div>
+
+        <button type="submit" class="form-btn btn-submit" >Register as Donor</button>
+
+      </form> 
+    </div> 
+  </section> 
+  <script src="../js/donate.js"></script>
+</body>
+</html>

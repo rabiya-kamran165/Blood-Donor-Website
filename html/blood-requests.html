@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Blood Requests | Blood Donor Finder</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+        <div class="logo">
+        <h1 class="logo-text">BL<img src="../assets/logo.png" alt="O">OD</h1>
+        <h5>Donor's Across Pakistan</h5>
+        </div>
+
+        <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="donors.html">Donors</a></li>
+        <li><a href="blood-requests.html">Blood Requests</a></li>
+        <li><a href="emergency-requests.html">Emergency Requests</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="request-for-blood.html" class="request-btn">Request for Blood</a></li>
+        <li><a href="donate.html" class="donate-btn">DONATE</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <section class="requests-section">
+  <div class="requests-container">
+    <h2 class="requests-title">Active <span>Blood Requests</span></h2>
+    <p class="requests-subtitle">Urgent cases requiring immediate assistance. Please contact if you can donate.</p>
+
+    <!-- Empty Grid Container for JavaScript/Local Storage Injection -->
+    <div class="requests-grid" id="requests-grid-container">
+    </div>
+  </div>
+</section>
+<script src="../js/blood-requests.js"></script>
+</body>
+</html>
