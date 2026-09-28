@@ -17,18 +17,17 @@ function displayEmergencyRequests() {
         return;
     }
     emergencyRequests.forEach(function (request) {
-        const emergencyCard = document.createElement("div");
-        emergencyCard.classList.add("emergency-card");
-        emergencyCard.innerHTML = `
+        emergencyContainer.innerHTML += `
+        <div class="emergency-card">
             <h3>🚨 ${request.bloodGroup} Blood Required</h3>
             <p><strong>Patient / Contact:</strong>${request.patientName}</p>
             <p><strong>Blood Units:</strong>${request.bloodUnits}</p>
             <p><strong>City:</strong>${request.city}</p>
             <p><strong>Area:</strong>${request.area}</p>
             <p><strong>Hospital:</strong>${request.hospital}</p>
-            <p><strong>Contact:</strong>${request.contact}/p>
+            <p><strong>Contact:</strong>${request.contact}</p>
+        </div>
         `;
-        emergencyContainer.appendChild(emergencyCard);
     });
 
     const latestRequest =
